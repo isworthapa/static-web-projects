@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Yeseva+One');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font:normal 16px/1.5 'Yeseva One', cursive;
+  height: 100vh;
+}
+/* global settings or styles */
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  background: #00e0ff;
+  min-height: 100px;
+  border-bottom: 4px double #f4f4f4;
+}
+
+/* header part */
+
+#brand {
+  float: left;
+  font-size: 1.4em;
+  color: #444;
+}
+#brand h1 {
+  margin-top: 14px;
+  border-bottom: 3px double #000;
+  opacity: 0;
+  animation:slidein 0.1s 0.1s forwards;
+}
+#brand i {
+  font-size:.9em;
+  margin-right: 6px;
+}
+nav {
+  float: right;
+  line-height: 100px;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav ul li a{
+  margin: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #444;
+  opacity: 0;
+  transition: all 0.5s;
+  animation:slidein 0.5s 0.5s forwards;
+}
+
+@keyframes slidein {
+  100% {
+    opacity: 1;
+  }
+}
+a:hover {
+  color: #f4f4f4;
+  padding-bottom: 0;
+  border-bottom: 1px solid #fff;
+  font-weight: normal;
+}
+/* banner section */
+
+#banner {
+  background:linear-gradient(rgba(25, 25, 26, 0.2), rgba(122, 249, 254,0.2)), url('../img/laptop-banner.jpg') no-repeat center;
+  background-size: cover;
+  min-height: 80vh;
+  color: #f4f4f4;
+}
+
+#banner h2 {
+  text-align: center;
+  font-size: 3em;
+  padding-top: 400px;
+  text-transform: uppercase;
+}
+#banner p {
+  text-align: center;
+  font: normal 1.4em 'Josefin Sans', sans-serif; 
+}
+
+/* subscribe button styles */
+
+#newsletter {
+  background: #7AF9FE;
+  padding: 15px;
+}
+
+#newsletter h3 {
+  float: left;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  padding-top: 20px;
+  margin-left: 200px;
+  color: #444;
+}
+
+#newsletter form {
+  float: right;
+}
+#newsletter input[type="email"] {
+  padding: 10px 20px;
+  border:none;
+  outline:none;
+  border-radius: 5px;
+  width: 280px;
+}
+
+#newsletter:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+form .btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 15px;
+  background: #00e0ff;
+  border:3px double #444;
+  outline: none;
+  color: #444;
+  text-transform: uppercase;
+}
+
+/* features block styles */
+
+#items {
+  padding-top:10px;
+  background: #A6FFF2;
+  overflow: hidden;
+}
+
+#items .item {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+.item p{
+  font: normal 1em 'Josefin Sans', sans-serif; 
+  color: #946d19;
+}
+
+.item img {
+  width: 90px;
+}
+
+/* filler text styles */
+
+/* footer styles */
+footer {
+  text-align: center;
+  background: #E8FFE8;
+  padding: 20px;
+  color: #444;
+}
