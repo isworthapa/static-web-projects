@@ -52,7 +52,7 @@ nav ul li {
 }
 
 nav ul li a{
-  margin: 10px 20px;
+  margin: 0;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -64,6 +64,7 @@ nav ul li a{
 
 @keyframes slidein {
   100% {
+    margin: 10px 20px;
     opacity: 1;
   }
 }
@@ -168,4 +169,44 @@ footer {
   background: #E8FFE8;
   padding: 20px;
   color: #444;
+}
+
+/* about page css */
+
+#about {
+  background: #E4F9F5;
+  text-align: justify;
+  font: normal 1em/1.5 'Josefin Sans', sans-serif; 
+}
+
+.about-yourself {
+  float: left;
+  width: 60%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.about-yourself p {
+  margin-bottom: 10px;
+}
+
+#sidebar {
+  box-sizing: border-box;
+  width: 40%;
+  padding: 10px;
+  float: left;
+}
+
+#sidebar h3 {
+  text-align: center;
+  margin-top: 5px;
+}
+
+#sidebar p {
+  padding-top: 10px;
+}
+
+#about::after{
+  content:"";
+  display: block;
+  clear: both;
 }
